@@ -10,8 +10,8 @@
         <img class="picture2" src="IMG_1976.JPG" alt="rangerSkewl">
         <img class="picture3" src="291096368_1190327865152937_8725751832802558343_n.jpg" alt="airborneRangerInTheSky">
       </div>
+    <link rel="stylesheet" href=./index.css/>
   </head>
-
   <body>
     <div class="editHeader">
       <div class="header">
@@ -20,7 +20,6 @@
         </p>
       </div>
     </div>
-
     <div class="intro">
       <p class="intro">
         Welcome to my webpage! This page is designed to be a learning project for Javascript, HTML, and CSS! Don't judge too harshly, as this was put together in a few days from an absolute beginner. Click the corresponding buttons to find out a little bit more about me!
@@ -28,7 +27,6 @@
     </div>
     </div>
     <div class="buttonsRow">
-
       <button class="aboutMeButton" id="allAboutMe">
         About Me
       </button>
@@ -39,9 +37,7 @@
         My Goals
       </button>
     </div>
-
     <div id="displayContent">
-
     </div>
 
     <script>
@@ -61,7 +57,7 @@
         const hobbyList = document.getElementById("displayContent") // resets the value of "display content"
         hobbyList.innerHTML = "" //so that when we click one button to the next, the old information goes away, but the new information populates.
         const hobbyPara = document.createElement("div") //creating a place for the paragraph to live within the html
-        hobbyPara.innerHTML = "Thinking back on my childhood, the only thing that comes to mind is baseball.  I was never the type to want to play inside, I always wanting to be throwing a baseball, football, or shooting a basketball.  Besides sports, I enjoy skateboarding (very badly), working out, hiking, and recently, coding! " // the actual message
+        hobbyPara.innerHTML = "Thinking back on my childhood, the only thing that comes to mind is baseball.  I was never the type to want to play inside, I always wanting to be throwing a baseball, football, or shooting a basketball.  Besides sports, I enjoy skateboarding (very badly), working out, hiking, and recently, coding! " 
         hobbyList.appendChild(hobbyPara) // add the message to display content area
       })
 
@@ -76,5 +72,4 @@
 
     </script>
   </body>
-
 </html>
