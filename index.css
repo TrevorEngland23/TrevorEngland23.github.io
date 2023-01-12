@@ -1,0 +1,140 @@
+* {
+    background-color: rgb(211, 208, 208);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    padding-bottom: 0px;
+    align-items: center;
+
+  }
+
+  .picture1 {
+    width: 100%;
+    display: block;
+    
+  }
+
+  .picture2 {
+    width: 100%;
+    display: block;
+    
+  }
+
+  .picture3 {
+    display: block;
+    width: 100%;
+   
+   
+  }
+
+  p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+
+  .header {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-decoration: underline;
+    margin-top: -9px;
+    margin-bottom: -20px;
+    border: 0px;
+
+  }
+
+  .intro {
+    display: flex;
+    padding-bottom: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+    line-height: 30px;
+
+
+  }
+
+  .buttonsRow {
+    background-color: rgb(151, 23, 23);
+    color: rgb(151, 23, 23);
+    border-style: dotted;
+    border-color: black;
+    border-width: 3px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+    margin-bottom: 20px;
+    margin-top: -2px;
+  }
+
+
+
+
+  .aboutMeButton,
+  .hobbiesButton,
+  .goalsButton {
+    background-color: rgb(12, 12, 12);
+    color: lightgray;
+    ;
+    border-style: inset;
+    border-color: lightgray;
+    border-width: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: bold;
+    text-decoration: underlne;
+    display: flex;
+    flex: 1;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 7px;
+    width: 100%;
+    margin-right: 20px;
+    transition: .3s;
+  }
+
+
+  .aboutMeButton:hover,
+  .hobbiesButton:hover,
+  .goalsButton:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-color: white;
+  }
+
+  .aboutMeButton:active,
+  .hobbiesButton:active,
+  .goalsButton:active {
+    opacity: .6;
+  }
+
+  #contactInfo {
+    font-size: 16px;
+    text-align: center;
+    padding-top: .5px;
+  }
+
+
+  #displayContent {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+  }
