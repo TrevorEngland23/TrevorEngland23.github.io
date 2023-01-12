@@ -1,0 +1,80 @@
+<html lang="en">
+
+  <head>
+    <title>
+      My Biography
+    </title>
+    <meta charset="utf-8">
+    <div class="gridContainer">
+        <img class="picture1" src="IMG_7697.jpeg" alt="hawaiiPic">
+        <img class="picture2" src="IMG_1976.JPG" alt="rangerSkewl">
+        <img class="picture3" src="291096368_1190327865152937_8725751832802558343_n.jpg" alt="airborneRangerInTheSky">
+      </div>
+  </head>
+
+  <body>
+    <div class="editHeader">
+      <div class="header">
+        <p>
+          MY BIOGRAPHY
+        </p>
+      </div>
+    </div>
+
+    <div class="intro">
+      <p class="intro">
+        Welcome to my webpage! This page is designed to be a learning project for Javascript, HTML, and CSS! Don't judge too harshly, as this was put together in a few days from an absolute beginner. Click the corresponding buttons to find out a little bit more about me!
+      </p>
+    </div>
+    </div>
+    <div class="buttonsRow">
+
+      <button class="aboutMeButton" id="allAboutMe">
+        About Me
+      </button>
+      <button class="hobbiesButton" id="hobbies">
+        My Hobbies
+      </button>
+      <button class="goalsButton" id="setGoals">
+        My Goals
+      </button>
+    </div>
+
+    <div id="displayContent">
+
+    </div>
+
+    <script>
+      const aboutMeBtn = document.getElementById("allAboutMe") // making a variable and assigning it to be about me button in the html
+      aboutMeBtn.addEventListener("click", () => { //creating an event listener... whenver this button is clicked..
+        const aboutMeInfo = document.getElementById("displayContent") // Making a variable and storing the value of display content within, which is ""
+        aboutMeInfo.innerHTML = "" //assigning it to equal ""
+        const infoPara = document.createElement("div") // making a variable where your paragraph will go, inside of a div
+        infoPara.innerHTML = "My name is Trevor England, born on May 23rd, 1996. I grew up in Paducah, KY and stayed there until I joined the Army in Jan of 2019.  I have a wife (Amber) and three dogs (Winnie, Bella, Tilley).  I have an Associates Degree in science, and I'm working on a bachelor's degree in computer science.  I am also preparing for a full-stack software development program during my transition out of the Army."
+        aboutMeInfo.appendChild(infoPara) // adding paragraph to the about me info.
+      })
+      // all together, its saying, when the about me button is clicked, 
+      // display the paragraph.
+
+      const myHobbies = document.getElementById("hobbies") // variable = button
+      myHobbies.addEventListener("click", () => { //when button is clicked, do...
+        const hobbyList = document.getElementById("displayContent") // resets the value of "display content"
+        hobbyList.innerHTML = "" //so that when we click one button to the next, the old information goes away, but the new information populates.
+        const hobbyPara = document.createElement("div") //creating a place for the paragraph to live within the html
+        hobbyPara.innerHTML = "Thinking back on my childhood, the only thing that comes to mind is baseball.  I was never the type to want to play inside, I always wanting to be throwing a baseball, football, or shooting a basketball.  Besides sports, I enjoy skateboarding (very badly), working out, hiking, and recently, coding! " // the actual message
+        hobbyList.appendChild(hobbyPara) // add the message to display content area
+      })
+
+      const myGoals = document.getElementById("setGoals")
+      myGoals.addEventListener("click", () => {
+        const goalSetting = document.getElementById("displayContent")
+        goalSetting.innerHTML = ""
+        const goalPara = document.createElement("div")
+        goalPara.innerHTML = "In the next upcoming years of my life, I plan to honorably leave the military, continue to learn software development, and eventually get a job in software development.  To get there, I plan on attending a Career Skills Program my last six months in the Army doing software development, while finishing up my CS degree. Other goals I have for myself include buying a second home, and getting back in the best shape of my life."
+        goalSetting.appendChild(goalPara)
+      })
+
+    </script>
+  </body>
+
+</html>
